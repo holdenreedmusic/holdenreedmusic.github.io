@@ -253,6 +253,10 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	.socials > a {
+		margin-right: 3px;
+	}
+
 /* Container */
 
 	.container {
@@ -2788,7 +2792,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		height: 64vh;
+		height: 78vh;
 		position: relative;
 		text-align: center;
 	}
@@ -2813,6 +2817,7 @@ input, select, textarea {
 
 			#header header a {
 				color: inherit;
+				border-bottom: none;
 			}
 
 				#header header a:hover {
