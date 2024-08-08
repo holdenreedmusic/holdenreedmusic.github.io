@@ -904,7 +904,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		height: 78vh;
+		height: 64vh;
 		position: relative;
 		text-align: center;
 	}
