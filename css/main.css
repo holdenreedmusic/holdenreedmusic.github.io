@@ -1160,6 +1160,10 @@ input, select, textarea {
 				min-width: 320px;
 			}
 
+			#header {
+				height: 48vh;
+			}
+
 		/* List */
 
 			ul.actions {
@@ -1219,8 +1223,8 @@ input, select, textarea {
 			input[type="button"],
 			button,
 			.button {
-				padding: 0;
-			}
+				padding: 2px;
+			}	
 
 				input[type="submit"].icon,
 				input[type="reset"].icon,
