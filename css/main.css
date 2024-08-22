@@ -129,6 +129,7 @@ input, select, textarea {
 		border-bottom: dotted 1px;
 		color: #8cd1a8;
 		text-decoration: none;
+		cursor: pointer;
 	}
 
 		a:hover {
@@ -659,11 +660,14 @@ input, select, textarea {
 			}
 
 /* List */
+	.lyrics-list {
+		text-align: left;
+	}
 
 	ol {
 		list-style: decimal;
 		margin: 0 0 2em 0;
-		padding-left: 1.25em;
+		padding-left: 1.00em;
 	}
 
 		ol li {
@@ -671,14 +675,14 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: disc;
+		list-style: none;
 		margin: 0 0 2em 0;
-		padding-left: 1em;
+		/* padding-left: 1em; */
 	}
 
-		ul li {
+		/* ul li {
 			padding-left: 0.5em;
-		}
+		} */
 
 		ul.alt {
 			list-style: none;
