@@ -45,18 +45,8 @@ blockquote, q {
 		content: none;
 	}
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 body {
 	-webkit-text-size-adjust: none;
-	/* background-image: url("../images/HR-road-sign-yellow.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-	background-position: top 50px center;
-	background-size: 48vh; */
 }
 
 mark {
@@ -132,9 +122,6 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		/* border-bottom: dotted 1px; */
-		/* color: #8cd1a8; */
-		/* color: #8a9a5b; */
 		color: #5B7C99;
 		text-decoration: none;
 		cursor: pointer;
@@ -142,7 +129,6 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent !important;
-			/* color: #8cd1a8 !important; */
 			text-decoration: underline;
 		}
 
@@ -216,42 +202,11 @@ input, select, textarea {
 		margin: 2em 0;
 	}
 
-		hr.major {
-			margin: 3em 0;
-		}
-
 	blockquote {
 		border-left: solid 6px #dddddd;
 		font-style: italic;
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 1.5em;
-	}
-
-	code {
-		background: rgba(144, 144, 144, 0.075);
-		font-family: "Courier New", monospace;
-		font-size: 0.9em;
-		margin: 0 0.25em;
-		padding: 0.25em 0.65em;
-	}
-
-	pre {
-		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
-		font-size: 0.9em;
-		margin: 0 0 2em 0;
-	}
-
-		pre code {
-			display: block;
-			line-height: 1.75em;
-			padding: 1em 1.5em;
-			overflow-x: auto;
-		}
-
-	.field-wrapper {
-		display: flex;
-    flex-flow: row;
 	}
 
 	.align-left {
@@ -267,7 +222,7 @@ input, select, textarea {
 	}
 
 	.socials > a {
-		margin-right: 7px;
+		margin: 3px;
 		text-decoration: none;
 	}
 
@@ -308,23 +263,6 @@ input, select, textarea {
 
 		.container.max {
 			width: 100%;
-		}
-
-		@media screen and (max-width: 980px) {
-
-			.container {
-				width: 80% !important;
-				max-width: 100% !important;
-			}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			.container {
-				width: 100% !important;
-			}
-
 		}
 
 /* Section/Article */
@@ -555,125 +493,6 @@ input, select, textarea {
 		opacity: 1.0;
 	}
 
-/* Box */
-
-	.box {
-		border: solid 2px #dddddd;
-		margin-bottom: 2em;
-		padding: 1.5em;
-	}
-
-		.box > :last-child,
-		.box > :last-child > :last-child,
-		.box > :last-child > :last-child > :last-child {
-			margin-bottom: 0;
-		}
-
-		.box.alt {
-			border: 0;
-			border-radius: 0;
-			padding: 0;
-		}
-
-/* Icon */
-
-	.icon {
-		text-decoration: none;
-		border-bottom: none;
-		position: relative;
-	}
-
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			display: inline-block;
-			font-style: normal;
-			font-variant: normal;
-			text-rendering: auto;
-			line-height: 1;
-			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
-		}
-
-		.icon > .label {
-			display: none;
-		}
-
-		.icon:before {
-			line-height: inherit;
-		}
-
-		.icon.solid:before {
-			font-weight: 900;
-		}
-
-		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
-		}
-
-		.icon.major {
-			display: block;
-			margin: 0 0 1em 0;
-		}
-
-			.icon.major:before {
-				font-size: 2.5em;
-			}
-
-/* Image */
-
-	.image {
-		border: 0;
-		display: inline-block;
-		position: relative;
-	}
-
-		.image:before {
-			background: url("images/overlay.png");
-			content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
-
-		.image img {
-			display: block;
-		}
-
-		.image.left {
-			float: left;
-			margin: 0 1.5em 1em 0;
-			top: 0.25em;
-		}
-
-		.image.right {
-			float: right;
-			margin: 0 0 1em 1.5em;
-			top: 0.25em;
-		}
-
-		.image.left, .image.right {
-			max-width: 40%;
-		}
-
-			.image.left img, .image.right img {
-				width: 100%;
-			}
-
-		.image.fit {
-			display: block;
-			margin: 0 0 2em 0;
-			width: 100%;
-		}
-
-			.image.fit img {
-				width: 100%;
-			}
-
 /* List */
 	.lyrics-list {
 		text-align: left;
@@ -692,12 +511,7 @@ input, select, textarea {
 	ul {
 		list-style: none;
 		margin: 0 0 2em 0;
-		/* padding-left: 1em; */
 	}
-
-		/* ul li {
-			padding-left: 0.5em;
-		} */
 
 		ul.alt {
 			list-style: none;
@@ -1059,11 +873,10 @@ input, select, textarea {
 
 	@media screen and (max-width: 980px) {
 
-		/* Main BG */
-
-			.main-bg {
-				display: none;
-			}
+		.container {
+			width: 80% !important;
+			max-width: 100% !important;
+		}
 
 		/* Main */
 
@@ -1181,6 +994,10 @@ input, select, textarea {
 				width: 30vh;
 			}
 
+			.socials > a {
+				margin: 6px;
+			}
+
 		/* List */
 
 			ul.actions {
@@ -1254,6 +1071,10 @@ input, select, textarea {
 				}
 
 		/* Main */
+
+			.container {
+				width: 100% !important;
+			}
 
 			.main .container {
 				padding: 3em 1em 1em 1em ;
