@@ -358,7 +358,7 @@ input, select, textarea {
 		margin-top: -0.6em;
 	}
 
-	header. {
+	header {
 		text-align: center;
 	}
 
@@ -1170,7 +1170,6 @@ input, select, textarea {
 			}
 
 			body {
-				background-size: 48vh;
 				background-image: url("../images/overlay.png"), url("../images/winding_small.jpg");
 			}
 
