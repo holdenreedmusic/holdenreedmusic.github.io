@@ -52,10 +52,11 @@ table {
 
 body {
 	-webkit-text-size-adjust: none;
-	background-image: url("../images/top.png");
+	/* background-image: url("../images/HR-road-sign-yellow.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-	background-position: top center;
+	background-position: top 50px center;
+	background-size: 48vh; */
 }
 
 mark {
@@ -79,14 +80,17 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+		background-color: #313a3d;
+		background-attachment: fixed,fixed;
+		background-image: url("../images/overlay.png"), url("../images/winding2.jpg");
+		/* background-position: top, left, center center; */
+		background-position: 25% 75%;
+		background-repeat: repeat, none;
+		background-size: auto, cover;
 	}
 
 	*, *:before, *:after {
 		box-sizing: inherit;
-	}
-
-	html {
-		background-color: #FFFAEC;
 	}
 
 	html.is-preload *, html.is-preload *:before, html.is-preload *:after {
@@ -128,16 +132,18 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		color: #8cd1a8;
+		/* border-bottom: dotted 1px; */
+		/* color: #8cd1a8; */
+		/* color: #8a9a5b; */
+		color: #5B7C99;
 		text-decoration: none;
 		cursor: pointer;
 	}
 
 		a:hover {
 			border-bottom-color: transparent !important;
-			color: #8cd1a8 !important;
-			text-decoration: none;
+			/* color: #8cd1a8 !important; */
+			text-decoration: underline;
 		}
 
 	strong, b {
@@ -261,7 +267,13 @@ input, select, textarea {
 	}
 
 	.socials > a {
-		margin-right: 3px;
+		margin-right: 7px;
+		text-decoration: none;
+	}
+
+	.logo {
+		margin-top: 50px;
+		width: 50vh;
 	}
 
 /* Container */
@@ -269,7 +281,9 @@ input, select, textarea {
 	.container {
 		margin: 0 auto;
 		max-width: calc(100% - 4em);
-		width: 35em;
+		width: 48em;
+		border-radius: 10px;
+		margin-bottom: 10px;
 	}
 
 		.container.xsmall {
@@ -344,7 +358,7 @@ input, select, textarea {
 		margin-top: -0.6em;
 	}
 
-	header.major {
+	header. {
 		text-align: center;
 	}
 
@@ -353,11 +367,10 @@ input, select, textarea {
 		}
 
 			header.major h1:after, header.major h2:after, header.major h3:after, header.major h4:after, header.major h5:after, header.major h6:after {
-				background: #dddddd;
 				content: '';
 				display: block;
 				height: 2px;
-				margin: 0.75em auto 0 auto;
+				/* margin: 0.75em auto 0 auto; */
 				position: relative;
 				width: 4em;
 			}
@@ -860,7 +873,7 @@ input, select, textarea {
 
 		.main .container {
 			padding: 5em 2.5em 8em 2.5em ;
-			background: rgba(255, 255, 255, 0.95);
+			background: #fff9ee;
 			box-shadow: inset 0 1px 0 0 #dddddd;
 		}
 
@@ -910,7 +923,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		height: 64vh;
+		height: 48vh;
 		position: relative;
 		text-align: center;
 	}
@@ -918,7 +931,7 @@ input, select, textarea {
 		#header:after {
 			content: '';
 			display: inline-block;
-			height: 100vh;
+			/* height: 100vh; */
 			vertical-align: middle;
 		}
 
@@ -978,7 +991,6 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		min-height: 100vh;
 		padding: 0 0 12em 0;
 		position: relative;
 		text-align: center;
@@ -986,7 +998,7 @@ input, select, textarea {
 
 		#footer .container {
 			padding: 5em 2.5em 3em 2.5em ;
-			background: rgba(255, 255, 255, 0.95);
+			background: #fff9ee;
 			box-shadow: inset 0 1px 0 0 #dddddd;
 		}
 
@@ -1015,6 +1027,7 @@ input, select, textarea {
 				font-size: 0.8em;
 				line-height: 1em;
 				padding: 0;
+				color: #fff9ee;
 			}
 
 				#footer footer .copyright li {
@@ -1102,8 +1115,6 @@ input, select, textarea {
 
 	@media screen and (max-width: 736px) {
 
-		/* Basic */
-
 			h2 {
 				font-size: 1.35em;
 			}
@@ -1123,14 +1134,6 @@ input, select, textarea {
 			}
 
 		/* Header */
-
-			#header {
-				height: 80vh;
-			}
-
-				#header:after {
-					height: 80vh;
-				}
 
 				#header header {
 					padding-bottom: 0;
@@ -1166,8 +1169,17 @@ input, select, textarea {
 				min-width: 320px;
 			}
 
+			body {
+				background-size: 48vh;
+				background-image: url("../images/overlay.png"), url("../images/winding_small.jpg");
+			}
+
 			#header {
-				height: 48vh;
+				height: 32vh;
+			}
+
+			.logo {
+				width: 30vh;
 			}
 
 		/* List */
@@ -1263,6 +1275,7 @@ input, select, textarea {
 			}
 
 				#footer footer .copyright li {
+					color: #fff9ee;
 					border-left: 0;
 					display: block;
 					margin: 0;
