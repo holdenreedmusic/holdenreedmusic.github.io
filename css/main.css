@@ -265,6 +265,14 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		.runaways-img {
+			float: right; height: 286px; width: 286px; margin-left: 5px;
+		}
+
+		.announcement {
+			border: 1px solid #f7b501; padding:5px; margin-top: 68px; margin-bottom: 68px;
+		}
+
 /* Section/Article */
 
 	section.special, article.special {
@@ -996,6 +1004,10 @@ input, select, textarea {
 
 			.socials > a {
 				margin: 6px;
+			}
+
+			.runaways-img {
+				float:none; height: 286px; width: 286px; margin-left:0px;
 			}
 
 		/* List */
