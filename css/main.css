@@ -1007,7 +1007,11 @@ input, select, textarea {
 			}
 
 			.runaways-img {
-				float:none; height: 286px; width: 286px; margin-left:0px;
+				width: auto;
+    		height: auto;
+				float:none;
+				max-width: 100%;
+				margin-left: 0px;
 			}
 
 		/* List */
