@@ -343,6 +343,10 @@ blockquote {
   width: 45vh;
 }
 
+.header-margin {
+	margin-top: 15px;
+}
+
 /* Container */
 
 .container {
@@ -1227,6 +1231,10 @@ button:disabled,
   #header {
     height: 32vh;
   }
+
+	.header-margin {
+		margin-top: 0px;
+	}
 
   .logo {
     width: 30vh;
