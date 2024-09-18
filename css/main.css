@@ -344,7 +344,7 @@ blockquote {
 }
 
 .header-margin {
-	margin-top: 15px;
+  margin-top: 15px;
 }
 
 /* Container */
@@ -457,7 +457,7 @@ blockquote {
   border: 1px solid #f7b501;
   padding: 5px;
   margin-top: 8px;
-  margin-bottom: 38px;
+  margin-bottom: 0px;
   border-radius: 2px;
   background-color: #f7b50127;
 }
@@ -473,6 +473,19 @@ blockquote {
   border-radius: 4px;
   box-shadow: 1px 1px 4px 0px #313a3d33;
   border-radius: 2px;
+}
+.spotifyplayerfixed {
+  position: fixed;
+  bottom: -60px;
+  right: 10px;
+  width: 250px;
+  height: auto;
+  z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+.spotifyplayer {
+  width: 80%;
+  height: 100px;
 }
 
 /* Section/Article */
@@ -1211,6 +1224,13 @@ button:disabled,
   #footer .container {
     padding: 3em 1.5em 1em 1.5em;
   }
+
+  .spotifyplayer {
+    width: 95%;
+  }
+  .spotifytext {
+    font-size: 14px;
+  }
 }
 
 /* XSmall */
@@ -1232,9 +1252,9 @@ button:disabled,
     height: 32vh;
   }
 
-	.header-margin {
-		margin-top: 0px;
-	}
+  .header-margin {
+    margin-top: 0px;
+  }
 
   .logo {
     width: 30vh;
