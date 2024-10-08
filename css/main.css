@@ -485,7 +485,8 @@ blockquote {
 
 .spotifyplayer {
   width: 80%;
-  height: 100px;
+
+  margin-bottom: 15px;
 }
 
 /* Section/Article */
